@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="media/my_photo.jpg" alt="Nwosu Rejoice's Profile" id="profile-img">
+        <h1>Hello, My name is Nwosu Rejoice Amarachi (24/13713) (Computer Science)!</h1>
+        <p>I am an aspiring web designer who is passionate about providing clean design, smooth user experience, and functionality for users.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I enjoy learning new technologies and bringing ideas to life through code. My focus is on building user-friendly and responsive web applications. My goal is to become a world-class tech innovator; someone who not only builds functionl and beautiful websites but also contributes to shaping the future of technology. Every line of code i write brings me closer to that vision</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="media/my_intro_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240">
+                <source src="media/my_project_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3><span class="math-inline">{project.name}</span></h3><!--36-->
+           <p>{project.description}</p>
+           <a href="#" target="_blank">View Project</a>
+             <div class="project-card">
+                <h3><span class="math-inline">{project.name}</span></h3><!--36-->
+            <p>{project.description}</p>
+            <a href="#" target="_blank">View Project</a>
+            <div class="project-card">
+                <h3><span class="math-inline">{project.name}</span></h3><!--36-->
+            <p>{project.description}</p>
+            <a href="#" target="_blank">View Project</a>
+               </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Nwosu Rejoice Amarachi. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+________________________________________
